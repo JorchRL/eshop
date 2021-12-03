@@ -29,6 +29,13 @@ const Arrow = styled.div`
   cursor: pointer;
   opacity: 0.5;
   z-index: 2;
+  transition: all 0.1s ease;
+
+  &:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    background-color: #d3d3d3;
+  }
 `;
 
 // SLIDER
@@ -88,6 +95,13 @@ const Button = styled.button`
   text-transform: uppercase;
   border: 2px solid black;
   cursor: pointer;
+  transition: all 0.12s ease;
+
+  &:hover {
+    transform: scale(1.08);
+    background-color: black;
+    color: white;
+  }
 `;
 // ^^^^^^
 
