@@ -6,7 +6,7 @@ import { sliderItems } from "../data";
 const Container = styled.div`
   width: 100%;
   height: 100vh;
-  /* background-color: orange; */
+  /* outline: 2px solid orange; */
   overflow: hidden;
   display: flex;
   position: relative;
@@ -45,7 +45,7 @@ const Slide = styled.div`
       as there will be many sliders one after the other */
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   align-items: center;
   /* outline: 1px solid coral; */
   background-color: ${(props) => props.bg};
@@ -58,7 +58,9 @@ const ImgContainer = styled.div`
   flex: 1;
 `;
 const Image = styled.img`
-  height: 80%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 `;
 // ^^^^^^
 
